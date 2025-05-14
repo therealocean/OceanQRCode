@@ -228,6 +228,20 @@ body.dark {
   }
 
   /* Media query for smaller screens */
+@media (max-width: 1920px) {
+    .description {
+        font-size: 1.5em;
+        margin-left: 50px;
+        margin-top: 325px;
+    }
+
+    .authormessage {
+        font-size: 1.5em;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+}
+
   @media (max-width: 1500px) {
     .description {
         font-size: 1.5em;
