@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- QR code CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- script -->
+    <script src="script.js"></script>
+    
+    <div class="modeToggle">
+        <label class="modeSwitch">
+            <input type="checkbox" id="modeSwitch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="codeBox">
+        <input type="text" id="userInput" placeholder="Enter URL">  
+        <div class="options">
+            <select id="size" class="sizeOptions">
+                <option value="100" selected>100 x 100</option>
+                <option value="200">200 x 200</option>
+                <option value="300">300 x 300</option>
+            </select>
+            <input type="color" id="oneColor" class="colorChoice">
+            <input type="color" id="twoColor" class="colorChoice">
+        </div>
+        <div class="box">
+            <button id="submit" type="button" disabled>Generate</button>
+            <a href="#" id="download">Download</a>
+        </div>
+        <div class="container"></div>
+    </div>
+    <div class="extrainfo">
+        <div class="description">
+            <h1>Convert your link <br> to QR Code.</h1>
+        </div>
+        <div class="authormessage">
+            Coded by<a href="" class="author">Ocean</a>
+        </div>
+    </div>
+</body>
+</html>
