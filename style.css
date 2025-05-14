@@ -228,11 +228,11 @@ body.dark {
   }
 
   /* Media query for smaller screens */
-@media (max-width: 1920px) {
+  @media (max-width: 2100px) {
     .description {
         font-size: 1.5em;
         margin-left: 50px;
-        margin-top: 325px;
+        margin-top: 250px;
     }
 
     .authormessage {
